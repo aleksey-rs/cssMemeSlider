@@ -171,7 +171,11 @@ main {
 	}
 }
 
-.pagination.action::before {
+.pagination__action {
+	display: none;
+}
+
+.pagination.action .pagination__action {
     content: '';
 	display: flex;
     width: 8pt;
