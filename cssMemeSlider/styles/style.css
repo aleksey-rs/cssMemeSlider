@@ -81,7 +81,6 @@ main {
 .images__list {
 	display: flex;
     justify-content: space-between;
-    column-gap: 20pt;
     transition: transform 0.8s;
 }
 
@@ -154,7 +153,6 @@ main {
 .images__desc-wrapper {
 	display: flex;
     justify-content: space-between;
-    column-gap: 50pt;
     transition: transform 0.8s
 }
 
@@ -175,7 +173,33 @@ main {
 	display: none;
 }
 
-.pagination.action .pagination__action {
+input[name='dot'] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#dot1:checked ~ .images__list {
+    transform: none;
+}
+#dot2:checked ~ .images__list {
+    transform: translateX(-100%);
+}
+#dot3:checked ~ .images__list {
+    transform: translateX(-200%);
+}
+#dot4:checked ~ .images__list {
+    transform: translateX(-300%);
+}
+#dot5:checked ~ .images__list {
+    transform: translateX(-400%);
+}
+
+#dot1:checked ~ .images__data .carousel_pagination label[for='dot1'] .pagination__action,
+#dot2:checked ~ .images__data .carousel_pagination label[for='dot2'] .pagination__action,
+#dot3:checked ~ .images__data .carousel_pagination label[for='dot3'] .pagination__action,
+#dot4:checked ~ .images__data .carousel_pagination label[for='dot4'] .pagination__action,
+#dot5:checked ~ .images__data .carousel_pagination label[for='dot5'] .pagination__action {
     content: '';
 	display: flex;
     width: 8pt;
@@ -187,4 +211,21 @@ main {
 	justify-content: center;
     flex-direction: row;
     align-items: center;
+}
+
+
+#dot1:checked ~ .images__data .images__desc-wrapper {
+    transform: none;
+}
+#dot2:checked ~ .images__data .images__desc-wrapper {
+    transform: translateX(-100%);
+}
+#dot3:checked ~ .images__data .images__desc-wrapper {
+    transform: translateX(-200%);
+}
+#dot4:checked ~ .images__data .images__desc-wrapper {
+    transform: translateX(-300%);
+}
+#dot5:checked ~ .images__data .images__desc-wrapper {
+    transform: translateX(-400%);
 }
