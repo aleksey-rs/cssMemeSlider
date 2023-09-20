@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Meme Slider</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Meme Slider</h1>
+    </header>
+    <main class="main">
+        <div class="container container--main">
+            
+            
+            <div class="images__items">
+                <input type="radio" name="dot" id="dot1" checked="">
+                <input type="radio" name="dot" id="dot2">
+                <input type="radio" name="dot" id="dot3">
+                <input type="radio" name="dot" id="dot4">
+                <input type="radio" name="dot" id="dot5">
+                <div class="images__list">
+                    <div class="image__item active" id="image_1"><img src="images/1.jpg" alt="first slide"></div>
+                    <div class="image__item" id="image_2"><img src="images/2.jpg" alt="second slide"></div>
+                    <div class="image__item" id="image_3"><img src="images/3.jpg" alt="third slide"></div>
+                    <div class="image__item" id="image_4"><img src="images/4.jpg" alt="fourth slide"></div>
+                    <div class="image__item" id="image_5"><img src="images/5.jpg" alt="fifth slide"></div>
+                </div>
+
+                <div class="images__data">    
+                    <div class="images__desc">
+                        <div class="images__desc-wrapper">
+                            <div class="image__desc">Я ушел в лес</div>
+                            <div class="image__desc">Хребет Совтоут, штат Айдахо</div>
+                            <div class="image__desc">Пляж Стинива</div>
+                            <div class="image__desc">Пустыня Негев</div>
+                            <div class="image__desc">Альберта, дорога в лесу</div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel_pagination">
+                        <div class="carousel__items">
+                            <div class="carousel__item">
+                                <label class="pagination" for="dot1">
+                                    <div class="pagination__action"></div>
+                                </label>
+                            </div>
+                            <label class="carousel__item" for="dot2">
+                                <div class="pagination">
+                                    <div class="pagination__action"></div>
+                                </div>
+                            </label>
+                            <label class="carousel__item" for="dot3">
+                                <div class="pagination">
+                                    <div class="pagination__action"></div>
+                                </div>
+                            </label>
+                            <label class="carousel__item" for="dot4">
+                                <div class="pagination">
+                                    <div class="pagination__action"></div>
+                                </div>
+                            </label>
+                            <label class="carousel__item" for="dot5">
+                                <div class="pagination">
+                                    <div class="pagination__action"></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </main>
+    <footer class="footer">
+            <div class="container">
+                <div class="footer__list">
+                    <div class="footer__logo_rs">
+                    <a href="https://rs.school/js/" class="logo_rs">
+                        <img src="./images/rs_school_js.svg" alt="rs-school" class="logo_rs">
+                    </a>
+                    </div>
+                    <div class="footer__year">
+                        <span>2023</span>    
+                    </div>
+                    <div class="footer__logo_git">
+                    <a href="https://github.com/aleksey-rs" class="logo_git">
+                        <img src="./images/git.png" alt="git" class="logo_git">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
