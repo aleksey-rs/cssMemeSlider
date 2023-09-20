@@ -49,7 +49,7 @@ main {
 	min-height: 83vh;
 }
 .container {
-	max-width: 600pt;
+	max-width: 50rem;
 	margin: 0 auto;
 	padding: 0 1.5rem;
     display: flex;
@@ -106,8 +106,8 @@ main {
 	display: flex;
     justify-content: center;
     align-items: center;
-	width: 20pt;
-	height: 20pt;
+	width: 1.6rem;
+	height: 1.6rem;
 	cursor: pointer;
 }
 
@@ -116,8 +116,8 @@ main {
     display: inline-block;
     line-height: 0;
 	border-radius: 50%;
-	width: 12pt;
-	height: 12pt;
+	width: 0.9rem;
+	height: 0.9rem;
 	transition: 0.5s;
 }
 
@@ -141,7 +141,7 @@ main {
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
-	margin-top: 12pt;
+	margin-top: 0.9rem;
 }
 
 .images__desc {
@@ -161,11 +161,11 @@ main {
     width: 100%;
 }
 
-@media (max-width: 390pt) {
+@media (max-width: 32.5rem) {
 
 	.images__data{
 		flex-direction: column-reverse;
-		grid-gap: 12pt;
+		grid-gap: 0.9rem;
 	}
 }
 
@@ -202,11 +202,11 @@ input[name='dot'] {
 #dot5:checked ~ .images__data .carousel_pagination label[for='dot5'] .pagination__action {
     content: '';
 	display: flex;
-    width: 8pt;
-    height: 8pt;
+    width: 0.6rem;
+    height: 0.6rem;
     background-color: #24282a;
     border-radius: 50%;
-	transform: translate(2pt, 2pt);
+	transform: translate(0.166rem, 0.166rem);
 	line-height: 0;
 	justify-content: center;
     flex-direction: row;
